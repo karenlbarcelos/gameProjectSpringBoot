@@ -1,4 +1,4 @@
-package com.firstprojectsb.learnspringframework;
+package com.firstprojectsb.learnspringframework.game;
 
 public class GameRunner {
 

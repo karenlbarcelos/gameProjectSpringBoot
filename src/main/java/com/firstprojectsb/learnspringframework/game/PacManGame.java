@@ -1,6 +1,8 @@
-package com.firstprojectsb.learnspringframework;
+package com.firstprojectsb.learnspringframework.game;
 
-public class PacManGame implements GamingConsole{
+import com.firstprojectsb.learnspringframework.game.GamingConsole;
+
+public class PacManGame implements GamingConsole {
 
     public void up(){
         System.out.println("Go up");
