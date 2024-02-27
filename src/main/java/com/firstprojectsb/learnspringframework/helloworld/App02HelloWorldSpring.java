@@ -1,4 +1,4 @@
-package com.firstprojectsb.learnspringframework;
+package com.firstprojectsb.learnspringframework.helloworld;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -25,6 +25,8 @@ public class App02HelloWorldSpring {
 
         System.out.println(context.getBean("person2MethodCall"));
 
-        System.out.println(context.getBean("person3Parameters"));
+        //System.out.println(context.getBean("person3Parameters"));
+        //Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+
     }
 }

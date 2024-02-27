@@ -1,7 +1,8 @@
-package com.firstprojectsb.learnspringframework;
+package com.firstprojectsb.learnspringframework.helloworld;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 //quando usamos record nao eh necessario utilizar getters e setters - cria  automaticamente
 record Person (String name, int age, Address address){}
@@ -23,7 +24,7 @@ public class HelloWorldConfiguration {
 
     @Bean //Spring Bean esta gerenciando o objeto "person"
     public Person person(){
-        return new Person("Karina", 30, new Address("Henry Street", "London"));
+        return new Person("Karina", 30, new Address("Beattles Street", "London"));
     }
 
     @Bean
@@ -37,6 +38,7 @@ public class HelloWorldConfiguration {
     }
 
     @Bean(name = "address2")
+    @Primary
     public Address address(){
         return new Address("2, Manor Street", "Dublin");
     }

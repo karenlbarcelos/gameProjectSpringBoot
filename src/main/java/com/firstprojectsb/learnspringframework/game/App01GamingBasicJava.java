@@ -1,4 +1,4 @@
-package com.firstprojectsb.learnspringframework;
+package com.firstprojectsb.learnspringframework.game;
 
 import com.firstprojectsb.learnspringframework.game.GameRunner;
 import com.firstprojectsb.learnspringframework.game.PacManGame;
